@@ -1,0 +1,19 @@
+html {
+	font-size: 16px;
+}
+body {
+	--spatiere-pagina: 30px;
+	--padding-section: 10px;
+}
+#grid-pagina {
+	grid-template-areas:
+		1fr 1fr
+		'z-index-intrebari z-index-intrebari'
+		'z-produse z-promotii'
+		'z-fig1 z-orar'
+		'z-fig2 z-orar'
+		'z-fig3 z-orar'
+		'z-anunturi z-anunturi'
+		'z-welcome z-welcome';
+	gap: 10px 5px;
+}

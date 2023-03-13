@@ -1,0 +1,83 @@
+html {
+	font-size: 18px;
+}
+body {
+	--culoare-background: rgb(255, 219, 235);
+	--culoare-background-inchis: #c886ff;
+	--culoare-text: black;
+	--spatiere-pagina: 30px;
+	--padding-section: 15px;
+}
+body.dark {
+	--culoare-background: rgb(0, 0, 0);
+	--culoare-text: white;
+}
+body {
+	background-color: var(--culoare-background);
+	color: var(--culoare-test);
+	padding-left: var(--spatiere-pagina);
+	padding-right: var(--spatiere-pagina);
+	min-width: 450px;
+	margin: 0;
+}
+h1 {
+	font-size: 2.5rem;
+}
+h2 {
+	font-size: 2rem;
+}
+
+#grid-pagina > * {
+	border: 3px solid cyan;
+	padding: var(--padding-section);
+}
+#grid-pagina {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas:
+		'z-faq, z-faq, z-faq'
+		'z-descriere z-descriere z-descriere'
+		'z-reduceri z-reduceri z-reduceri'
+		'z-populare z-populare z-similar1'
+		'z-populare z-populare z-similar2'
+		'z-populare z-populare z-similar3';
+	gap: 20px 10px;
+}
+
+#descriere {
+	grid-area: z-descriere;
+}
+#reduceri {
+	grid-area: z-reduceri;
+}
+#populare {
+	grid-area: z-populare;
+}
+
+#similar1 {
+	grid-area: z-similar1;
+}
+#similar2 {
+	grid-area: z-similar2;
+}
+#similar3 {
+	grid-area: z-similar3;
+}
+
+#faq {
+	grid-area: z-faq;
+}
+
+img {
+	width: 100%;
+	max-width: 400px;
+}
+
+main {
+	margin-top: 100px;
+}
+
+/* 
+  fix grid + pe tema
+  modificat pentru tema 2!!!
+*/
