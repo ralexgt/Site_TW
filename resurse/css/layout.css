@@ -2,11 +2,15 @@ html {
 	font-size: 18px;
 }
 body {
-	--culoare-background: rgb(255, 219, 235);
-	--culoare-background-inchis: #c886ff;
-	--culoare-text: black;
+	--culoare-background: #8f8383;
+	--culoare-background-inchis: #808080;
+	--culoare-text: #000000;
+	--culoare-border: #994949;
+	--culoare-background-hover: #332e30;
 	--spatiere-pagina: 30px;
 	--padding-section: 15px;
+	--latime-iftab: 10px;
+	--inaltime-iftab: 5px;
 }
 body.dark {
 	--culoare-background: rgb(0, 0, 0);
@@ -14,7 +18,7 @@ body.dark {
 }
 body {
 	background-color: var(--culoare-background);
-	color: var(--culoare-test);
+	color: var(--culoare-text);
 	padding-left: var(--spatiere-pagina);
 	padding-right: var(--spatiere-pagina);
 	min-width: 450px;
@@ -27,45 +31,86 @@ h2 {
 	font-size: 2rem;
 }
 
+div.taburi-iframe > a {
+	border: 3px solid var(--culoare-border);
+	padding-left: 7px;
+	padding-right: 7px;
+	border-top-right-radius: 18%;
+	border-top-left-radius: 18%;
+	text-align: center;
+	text-decoration: none;
+	color: var(--culoare-text);
+	font-weight: bold;
+	transition: background-color 0.8s linear;
+}
+
+div.taburi-iframe > a:hover {
+	background-color: var(--culoare-background-hover);
+}
+
+.gotop {
+	display: block;
+	border: 3px solid var(--culoare-border);
+	text-decoration: none;
+	font-size: 50px;
+	height: 0.8em;
+	width: 0.8em;
+	text-align: center;
+	line-height: 1;
+	color: var(--culoare-text);
+	border-top-right-radius: 35%;
+	border-top-left-radius: 35%;
+	position: sticky;
+	bottom: 1%;
+	left: 92%;
+}
+
 #grid-pagina > * {
-	border: 3px solid cyan;
+	border: 3px solid var(--culoare-border);
 	padding: var(--padding-section);
 }
 #grid-pagina {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 2fr 1fr;
 	grid-template-areas:
-		'z-faq, z-faq, z-faq'
 		'z-descriere z-descriere z-descriere'
-		'z-reduceri z-reduceri z-reduceri'
-		'z-populare z-populare z-similar1'
-		'z-populare z-populare z-similar2'
-		'z-populare z-populare z-similar3';
+		'z-sigla z-orar z-lista'
+		'z-populare z-orar z-lista'
+		'z-populare z-reduceri z-similar'
+		'z-faq z-faq z-faq';
 	gap: 20px 10px;
 }
 
 #descriere {
 	grid-area: z-descriere;
 }
-#reduceri {
-	grid-area: z-reduceri;
-}
+
 #populare {
 	grid-area: z-populare;
 }
 
-#similar1 {
-	grid-area: z-similar1;
+#reduceri {
+	grid-area: z-reduceri;
 }
-#similar2 {
-	grid-area: z-similar2;
-}
-#similar3 {
-	grid-area: z-similar3;
+
+#similar {
+	grid-area: z-similar;
 }
 
 #faq {
 	grid-area: z-faq;
+}
+
+#orar {
+	grid-area: z-orar;
+}
+
+#lista_produse {
+	grid-area: z-lista;
+}
+
+#sigla {
+	grid-area: z-sigla;
 }
 
 img {
@@ -76,8 +121,3 @@ img {
 main {
 	margin-top: 100px;
 }
-
-/* 
-  fix grid + pe tema
-  modificat pentru tema 2!!!
-*/

@@ -7,13 +7,11 @@ body {
 }
 #grid-pagina {
 	grid-template-areas:
-		1fr 1fr
-		'z-index-intrebari z-index-intrebari'
-		'z-produse z-promotii'
-		'z-fig1 z-orar'
-		'z-fig2 z-orar'
-		'z-fig3 z-orar'
-		'z-anunturi z-anunturi'
-		'z-welcome z-welcome';
+		'z-descriere z-descriere'
+		'z-sigla z-orar'
+		'z-reduceri z-orar'
+		'z-populare z-lista_produse'
+		'z-populare z-similar'
+		'z-faq z-faq';
 	gap: 10px 5px;
 }

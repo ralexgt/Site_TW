@@ -1,0 +1,70 @@
+#hamburger,
+#ch-menu {
+	display: none;
+}
+
+body {
+	--inaltime-meniu: 30px;
+	--latime-buton: 100px;
+	--culoare-meniu: var(--culoare-background-inchis);
+	--culoare-border-buton: black;
+}
+
+ul.meniu,
+ul.meniu ul {
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	/* opacity: 0; */
+	/* transition: opacity 0.8s linear; */
+	/* transform: scale(0, 0); */
+}
+
+ul.meniu {
+	display: flex;
+	li {
+		width: var(--latime-buton);
+		height: var(--inaltime-meniu);
+		background-color: var(--culoare-meniu);
+		overflow: hidden;
+		transition: background-color 0.8s linear;
+		text-align: center;
+		border: 1px solid var(--culoare-border-buton);
+		box-sizing: border-box;
+		&:hover {
+			overflow: visible;
+			background-color: purple;
+		}
+	}
+}
+
+/* ul.meniu li:hover ul {
+	opacity: 1;
+	transform: scale(1, 1);
+} */
+
+nav {
+	color: black;
+	line-height: var(--inaltime-meniu);
+	text-decoration: none;
+	font-weight: bold;
+	background-color: var(--culoare-background-inchis);
+	width: calc(100vw - 18px);
+	height: var(--inaltime-meniu);
+	position: sticky;
+	top: 0;
+	margin-left: calc(-1 * var(--spatiere-pagina));
+}
+
+ul.meniu li div,
+ul.meniu li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+#acasa-mediu {
+	display: none;
+}
+
+/* transformam codul css in sass si dupa folosim sass pentru generare css */

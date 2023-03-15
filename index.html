@@ -16,13 +16,13 @@
   <meta name="msapplication-config" content="./resurse/ico/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
   <link rel="stylesheet" href="resurse/css/layout.css" type="text/css">
   <link rel="stylesheet" href="resurse/css/layout1000.css" type="text/css" media="screen and (max-width:1000px)">
   <link rel="stylesheet" href="resurse/css/layout700.css" type="text/css" media="screen and (max-width:700px)">
   <link rel="stylesheet" href="resurse/css/nav.css" type="text/css">
-  <link rel="stylesheet" href="resurse/css/nav1000.css" type="text/css" media="screen and (max-width:1000px)" />
-  <link rel="stylesheet" href="resurse/css/nav700.css" type="text/css" media="screen and (max-width:700px)" />
+  <link rel="stylesheet" href="resurse/css/nav1000.css" type="text/css" media="screen and (max-width:1000px)">
+  <link rel="stylesheet" href="resurse/css/nav700.css" type="text/css" media="screen and (max-width:700px)">
 </head>
 
 <body>
@@ -87,71 +87,33 @@
           Informatii periferice pdf: <a
             href="https://drive.google.com/u/0/uc?id=1DrKAIJ0ev1ASwvumTJ_ni7Gd0x3EmRPL&export=download"> download </a>
         </p>
-        <p>Periferice valabile:</p>
-        <ul>
-          <li> <b> <i lang="en"> mice </i> </b> </li>
-          <li> <b> tastaturi </b></li>
-          <li> <b> monitoare </b> </li>
-          <li> <b> camere web </b> </li>
-          <li> <b> casti </b> </li>
-        </ul>
       </section>
       <section id="populare">
         <h2>Categorii populare</h2>
-        <section>
-          <h3 lang="en">Mice</h3>
-          <p>
-            <img src="tbd" alt="imagine-mouse" title="imagine-mouse"> <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/UMHmPdVbaIM"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </p>
-        </section>
-        <section>
-          <h3>Tastaturi</h3>
-          <p>
-            <img src="tbd" alt="imagine-tastatura" title="imagine-tastatura"> <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/4ID07-TVhKw"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </p>
-        </section>
-        <section>
-          <h3>Casti</h3>
-          <p>
-            <img src="tbd" alt="imagine-casti" title="imagine-casti"> <br>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/sBba4MGPc2U"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen></iframe>
-          </p>
-        </section>
-        <section id="reduceri">
-          <p style="font-weight: bold">
-            <strong> Atentie! </strong>
-            <b> Reducerile </b> afisate sunt valabile pana la data afisata in descrierea fiecarui produs!
-          </p>
-          <p>
-            <b> Reduceri </b> in valoare de pana la
-            <span style="font-weight: bold">
-              <s>10% </s> <ins style="text-decoration: none"> 25% </ins>
-            </span>
-          </p>
-        </section>
+        <div class="taburi-iframe">
+          <a href="https://www.youtube.com/embed/UMHmPdVbaIM" target="ifr-video">Mouse</a>
+          <a href="https://www.youtube.com/embed/4ID07-TVhKw" target="ifr-video">Tastatura</a>
+          <a href="https://www.youtube.com/embed/sBba4MGPc2U" target="ifr-video">Casti</a>
+        </div>
+
+        <iframe name="ifr-video" width="460" height="250" src="https://www.youtube.com/embed/UMHmPdVbaIM"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </section>
-      <section>
-        <h2> <i lang="en"> Site </i>-uri similare: </h2>
-        <p id="similar1">
-          <a href="http://www.hyperx.com" target="_blank">HyperX</a>
+      </section>
+      <section id="reduceri">
+        <h2>Reduceri</h2>
+        <p style="font-weight: bold">
+          <strong> Atentie! </strong>
+          <b> Reducerile </b> afisate sunt valabile pana la data afisata in descrierea fiecarui produs!
         </p>
-        <p id="similar2">
-          <a href="http://www.hyperx.com" target="_blank">HyperX2</a>
+        <p>
+          <b> Reduceri </b> in valoare de pana la
+          <span style="font-weight: bold">
+            <s>10% </s> <ins style="text-decoration: none"> 25% </ins>
+          </span>
         </p>
-        <p id="similar3">
-          <a href="http://www.hyperx.com" target="_blank">HyperX3</a>
-        </p> <!-- to be changed ??? -->
       </section>
       <section id="faq">
         <h2>Întrebări frecvente</h2>
@@ -168,6 +130,101 @@
           <p>Momentan nu!</p>
         </details>
       </section>
+      <section id="similar">
+        <h2> <i lang="en"> Site </i> similare: </h2>
+        <p>
+          <a href="http://www.hyperx.com" target="_blank">HyperX</a>
+      </section>
+      <section id="orar">
+        <h2>Program de lucru</h2>
+        <table id="tab-orar">
+          <thead>
+
+            <tr>
+              <th>Perioadă</th>
+              <th>Zi</th>
+              <th>Interval dimineata</th>
+              <th>Pauza de masa</th>
+              <th>Interval seară</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td rowspan="5">Zile<br>Lucrătoare</td>
+              <td>Luni</td>
+              <td>9-12</td>
+              <td>13-17</td>
+              <td>18-22</td>
+            </tr>
+            <tr>
+              <td></td>
+
+              <td>Marti</td>
+              <td>9-12</td>
+              <td>13-17</td>
+              <td>18-22</td>
+            </tr>
+            <tr>
+              <td></td>
+
+              <td>Miercuri</td>
+              <td>9-12</td>
+              <td>13-17</td>
+              <td>18-22</td>
+            </tr>
+            <tr>
+              <td></td>
+
+              <td>Joi</td>
+              <td>9-12</td>
+              <td>13-17</td>
+              <td>18-22</td>
+            </tr>
+            <tr>
+              <td></td>
+
+              <td>Vineri</td>
+              <td>9-12</td>
+              <td>13-17</td>
+              <td>18-18</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td rowspan="2">Weekend</td>
+              <td>Sambata</td>
+              <td>10-12</td>
+              <td>13-16</td>
+              <td>17-18</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td> Duminica->inchis</td>
+          </tfoot>
+        </table>
+      </section>
+      <section id="lista_produse">
+        <h2>Periferice valabile:</h2>
+        <ul>
+          <li> <b> <i lang="en"> mice </i> </b> </li>
+          <li> <b> tastaturi </b></li>
+          <li> <b> monitoare </b> </li>
+          <li> <b> camere web </b> </li>
+          <li> <b> casti </b> </li>
+        </ul>
+      </section>
+      <section id="sigla">
+        <h2>Sigla magazinului</h2>
+        <figure>
+          <picture>
+            <source media="(max-width: 500px)" srcset="./wrongonpurpose">
+            <source media="(max-width: 1000px)" srcset="./wrongonpurpose">
+            <img src="./wrongonpurpose" alt="imagine-sigla" title="sigla site-ului">
+          </picture>
+          <figcaption>Sigla site-ului</figcaption>
+        </figure>
+      </section>
+      <a href="#" class="gotop">&#129081;</a>
     </div>
   </main>
   <footer id="contact">
@@ -177,7 +234,6 @@
       <a href="mailto:someone@example.com">Trimite-ne un mail</a> <br>
       <a href="https://wa.link/dibccg" target="_blank"> Contacteaza-ne pe whatsapp</a>
     </address>
-    <a href="#">Home</a>
     <p> <small>Copyright &copy; <time datetime="2023-03-05"> 05 martie 2023 </time></small> </p>
   </footer>
 </body>
